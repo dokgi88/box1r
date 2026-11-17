@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOX1R — RING TO BELT</title>
+<meta name="description" content="アイソメトリックのドット絵ボクシング。ジャブをかわし、カウンターでベルトを奪え。">
+<meta property="og:title" content="BOX1R — RING TO BELT">
+<meta property="og:description" content="アイソメトリックのドット絵ボクシング。ジャブをかわし、カウンターでベルトを奪え。">
+<meta property="og:image" content="https://dokgi88.github.io/box1r/img/header.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6829400965">
+<link rel="icon" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<link rel="alternate" hreflang="en" href="https://dokgi88.github.io/box1r/">
+<link rel="alternate" hreflang="ko" href="https://dokgi88.github.io/box1r/ko/">
+<link rel="alternate" hreflang="ja" href="https://dokgi88.github.io/box1r/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dokgi88.github.io/box1r/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dokgi88.github.io/box1r/zh-hant/">
+<link rel="alternate" hreflang="es" href="https://dokgi88.github.io/box1r/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://dokgi88.github.io/box1r/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://dokgi88.github.io/box1r/fr/">
+<link rel="alternate" hreflang="de" href="https://dokgi88.github.io/box1r/de/">
+<link rel="alternate" hreflang="ru" href="https://dokgi88.github.io/box1r/ru/">
+<link rel="alternate" hreflang="x-default" href="https://dokgi88.github.io/box1r/">
+
+<style>
+:root { --bg:#1b120d; --card:#271a13; --ink:#f3e6cf; --soft:#cbb898; --line:#3d2a1f; --red:#c8352b; --gold:#e3b04b; }
+:root[data-theme="light"] { --bg:#f6ecdb; --card:#fffaf0; --ink:#2a1a12; --soft:#6b5442; --line:#e2cfb3; --red:#b42d24; --gold:#9a6b12; }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Noto Sans", sans-serif; }
+main { max-width:1040px; margin:0 auto; padding:12px 16px 64px; }
+img, video { display:block; max-width:100%; }
+.px { image-rendering:pixelated; image-rendering:crisp-edges; }
+nav { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--soft); padding:4px 0 12px; }
+nav a { color:inherit; text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:700; text-decoration:underline; text-decoration-color:var(--red); }
+.hero { border-radius:14px; overflow:hidden; border:1px solid var(--line); aspect-ratio:3840/1646; background:#000; }
+.hero img { width:100%; height:100%; object-fit:cover; }
+.head { display:flex; gap:16px; align-items:center; margin:20px 0 6px; }
+.icon { width:88px; height:88px; border-radius:20px; flex:none; }
+h1 { font-size:30px; line-height:1.1; margin:0; letter-spacing:.02em; } .sub { color:var(--red); margin:4px 0 0; font-weight:700; letter-spacing:.12em; font-size:14px; }
+.promo { font-size:18px; margin:12px 0 16px; max-width:760px; }
+.get { margin:0 0 28px; } .get img { height:48px; width:auto; }
+h2 { font-size:15px; letter-spacing:.12em; color:var(--gold); margin:32px 0 10px; }
+video { width:100%; border-radius:12px; border:1px solid var(--line); background:#000; aspect-ratio:1920/886; }
+.strip { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; margin-top:16px; }
+.strip img { flex:none; width:min(640px, 86vw); height:auto; aspect-ratio:2622/1206; border-radius:10px; border:1px solid var(--line); scroll-snap-align:start; background:#000; }
+.intro p { font-size:17px; margin:8px 0; max-width:780px; }
+.secs { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:12px; margin:16px 0; }
+.secs div { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--red); border-radius:10px; padding:14px 16px; }
+.secs b { display:block; color:var(--gold); font-size:13px; letter-spacing:.08em; margin-bottom:4px; }
+.secs p { margin:0; }
+.feat { columns:2 300px; padding:0 0 0 18px; margin:8px 0; } .feat li { margin:2px 0; break-inside:avoid; }
+.end p { margin:10px 0; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; display:flex; flex-wrap:wrap; gap:6px 18px; }
+footer a { color:inherit; }
+@media (max-width:640px) { h1 { font-size:24px; } .icon { width:72px; height:72px; } }
+</style>
+</head>
+<body>
+<main>
+<!-- tools/market_site.py 가 store/<언어>.json 에서 굽는다 — 손으로 고치지 않는다 -->
+<nav><a href="https://dokgi88.github.io/box1r/">English</a> <a href="https://dokgi88.github.io/box1r/ko/">한국어</a> <a href="https://dokgi88.github.io/box1r/ja/" aria-current="page">日本語</a> <a href="https://dokgi88.github.io/box1r/zh-hans/">简体中文</a> <a href="https://dokgi88.github.io/box1r/zh-hant/">繁體中文</a> <a href="https://dokgi88.github.io/box1r/es/">Español</a> <a href="https://dokgi88.github.io/box1r/pt-br/">Português</a> <a href="https://dokgi88.github.io/box1r/fr/">Français</a> <a href="https://dokgi88.github.io/box1r/de/">Deutsch</a> <a href="https://dokgi88.github.io/box1r/ru/">Русский</a></nav>
+<div class="hero"><img class="px" src="../img/header.png" alt="BOX1R" width="1920" height="823"></div>
+<div class="head"><img class="icon" src="../img/icon.png" alt="" width="256" height="256"><div><h1>BOX1R</h1><p class="sub">RING TO BELT</p></div></div>
+<p class="promo">5つのファイトスタイル、生きた世界ランキング、3本のタイトルベルト。ジャブをかわしてカウンターを叩き込み、ベルトを奪え。基本プレイ無料、オフラインで遊べます。</p>
+<div class="get"><a href="https://apps.apple.com/app/id6829400965"><img src="../img/badges/as_ja.svg" alt="Download on the App Store"></a></div>
+<h2>トレーラー</h2><video src="../video/preview.mp4" poster="../img/en/01_fight.png" controls playsinline preload="none"></video>
+<div class="strip"><img class="px" src="../img/ja/01_fight.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/05_career.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/02_versus.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/03_bag.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/06_locker.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/04_tournament.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/ja/07_title.png" alt="" loading="lazy" width="1311" height="603"></div>
+<div class="intro"><p>グローブをはめて、ロープをくぐれ。</p><p>BOX1R は、コマ数の多いなめらかなドット絵で描く1対1のボクシング。広いアイソメトリックカメラがリング全体を映し、小さくてもリアルな体格のボクサーが16方向に動きます。</p></div>
+<div class="secs"><div><b>フットワークが勝負を決める</b><p>リングのすべてが自分の舞台。踏み込み、下がり、回り込み、相手の周りでピボットし、スティックをはじいてダッシュ。誰もその場で急には向きを変えられない。ガードを固めた相手の横へ回れば、パンチはガードの外から突き刺さる。</p></div><div><b>ガードだけじゃない、頭で避ける</b><p>ブロック、または当たる直前に手を上げてパリィ。スリップ、スウェー、ダッキング、ウィービングでコーナーを抜け出せ。空振りさせればカウンターのチャンス。フェイントで相手を固まらせ、クリンチで息を整えろ。</p></div><div><b>あらゆるパンチ</b><p>ジャブ、ストレート、フック、アッパーを顔にもボディにも。方向を加えればステップジャブ、オーバーハンド、チェックフック。フックは左右に連なり、ボディ打ちは試合を通してスタミナを奪う。</p></div><div><b>5つのスタイル、5つの必殺技</b><p>アウトボクサー、インファイター、スラッガー、カウンターパンチャー、ボクサーパンチャー。スタイルごとに動き・パンチ・ステップが違い、専用技と観客の歓声でたまる必殺技を持つ。</p></div><div><b>手に伝わる打撃感</b><p>ヒットストップ、画面の揺れ、汗としぶき、重なるグローブの音と振動。ダウンは受けたパンチで変わる。フックなら回って倒れ、強打なら吹き飛び、コーナーではロープが体を受け止める。クリーンなカウンター一発で意識が飛び、スローモーションのリプレイが流れる。</p></div><div><b>本物の試合</b><p>2種類のスタミナ、ドクターストップを招く腫れとカット、10カウント、3ノックダウンTKO、いつも同じ採点とは限らない3人のジャッジ。ラウンド間にはコーナーの処置を選べる。実況とパンチ統計が勝因と敗因を教えてくれる。</p></div><div><b>キャリア：生きたランキングを駆け上がれ</b><p>すぐ上の選手に挑戦。勝てばその座を奪い、負ければ順位が下がる。ほかの選手たちも戦っている。ライバルは鍛え、年を取り、引退し、新人がデビューし、ベルトの持ち主が変わる。シティ・国内・世界のタイトルを獲って防衛し、実績が十分なら殿堂入りして引退しよう。試合とキャンプで経験値を積み、レベルアップごとにもらえるトレーニングポイントは自分で振り分ける。ローグライク的なリセットはなし。</p></div><div><b>トレーニングキャンプ</b><p>試合の合間に8種類の練習：コンビネーションを指示するコーチとのミット打ち、サンドバッグ、次の相手のように戦うパートナーとのスパーリング、ランニングマシンでのロードワーク、ディフェンスミット、ダブルエンドバッグ、スリップロープ、なわとび。</p></div><div><b>自分のボクサーを作ろう</b><p>身長・体重・筋肉量を決め、17種類の髪型とひげ、トランクス・グローブ・シューズは好きな色に。リングで手に入る柄とタトゥー（和彫り・サモアの全身タトゥーも）、オーソドックスかサウスポーか、動きが変わるシューズまで。</p></div><div><b>基本プレイ無料</b><p>広告はトレーニングキャンプで自分から見るリワード動画だけで、強制されることはありません。「広告の削除」を一度購入すれば、広告なしですべての報酬を受け取れます。オフラインで遊べます。</p></div></div>
+<ul class="feat"><li>アイソメトリックのリングで自由な移動・角度・ピボット</li><li>ガード、パリィ、スリップ、スウェー、ダッキング、ウィービング、フェイント、クリンチ</li><li>技と必殺技が異なる5つのスタイル</li><li>生きた世界ランキング、3本のタイトルベルト、殿堂</li><li>16人トーナメントと12のチャレンジ</li><li>8種類のトレーニングと試合ごとのキャンプ</li><li>同じWi-Fiの友だちとWi-Fi対戦</li><li>ビギナーからレジェンドまで5段階の難易度</li><li>リプレイとフォトモード</li><li>3種類のタッチ操作とゲームパッド対応</li><li>流血表現はオフにできます</li><li>10言語に対応</li></ul>
+<div class="end"><p>ガードを上げて、あごを引け。カーン！</p></div>
+<div class="get"><a href="https://apps.apple.com/app/id6829400965"><img src="../img/badges/as_ja.svg" alt="Download on the App Store"></a></div>
+<footer><a href="https://dokgi88.github.io/box1r-privacy/#ja">プライバシーポリシー</a><a href="https://dokgi88.github.io/box1r-privacy/support.html#ja">サポート</a><a href="mailto:yeoreum.void@gmail.com">yeoreum.void@gmail.com</a><span>© 2026 dokgi88</span></footer>
+</main>
+</body>
+</html>

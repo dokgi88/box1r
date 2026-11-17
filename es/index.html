@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOX1R — RING TO BELT</title>
+<meta name="description" content="Boxeo pixel isométrico: esquiva el jab, mete el contragolpe, gana el cinturón.">
+<meta property="og:title" content="BOX1R — RING TO BELT">
+<meta property="og:description" content="Boxeo pixel isométrico: esquiva el jab, mete el contragolpe, gana el cinturón.">
+<meta property="og:image" content="https://dokgi88.github.io/box1r/img/header.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="apple-itunes-app" content="app-id=6829400965">
+<link rel="icon" href="../img/icon.png">
+<link rel="apple-touch-icon" href="../img/icon.png">
+<link rel="alternate" hreflang="en" href="https://dokgi88.github.io/box1r/">
+<link rel="alternate" hreflang="ko" href="https://dokgi88.github.io/box1r/ko/">
+<link rel="alternate" hreflang="ja" href="https://dokgi88.github.io/box1r/ja/">
+<link rel="alternate" hreflang="zh-Hans" href="https://dokgi88.github.io/box1r/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dokgi88.github.io/box1r/zh-hant/">
+<link rel="alternate" hreflang="es" href="https://dokgi88.github.io/box1r/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://dokgi88.github.io/box1r/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://dokgi88.github.io/box1r/fr/">
+<link rel="alternate" hreflang="de" href="https://dokgi88.github.io/box1r/de/">
+<link rel="alternate" hreflang="ru" href="https://dokgi88.github.io/box1r/ru/">
+<link rel="alternate" hreflang="x-default" href="https://dokgi88.github.io/box1r/">
+
+<style>
+:root { --bg:#1b120d; --card:#271a13; --ink:#f3e6cf; --soft:#cbb898; --line:#3d2a1f; --red:#c8352b; --gold:#e3b04b; }
+:root[data-theme="light"] { --bg:#f6ecdb; --card:#fffaf0; --ink:#2a1a12; --soft:#6b5442; --line:#e2cfb3; --red:#b42d24; --gold:#9a6b12; }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC", "Noto Sans", sans-serif; }
+main { max-width:1040px; margin:0 auto; padding:12px 16px 64px; }
+img, video { display:block; max-width:100%; }
+.px { image-rendering:pixelated; image-rendering:crisp-edges; }
+nav { display:flex; flex-wrap:wrap; gap:4px 12px; font-size:13px; color:var(--soft); padding:4px 0 12px; }
+nav a { color:inherit; text-decoration:none; } nav a[aria-current] { color:var(--ink); font-weight:700; text-decoration:underline; text-decoration-color:var(--red); }
+.hero { border-radius:14px; overflow:hidden; border:1px solid var(--line); aspect-ratio:3840/1646; background:#000; }
+.hero img { width:100%; height:100%; object-fit:cover; }
+.head { display:flex; gap:16px; align-items:center; margin:20px 0 6px; }
+.icon { width:88px; height:88px; border-radius:20px; flex:none; }
+h1 { font-size:30px; line-height:1.1; margin:0; letter-spacing:.02em; } .sub { color:var(--red); margin:4px 0 0; font-weight:700; letter-spacing:.12em; font-size:14px; }
+.promo { font-size:18px; margin:12px 0 16px; max-width:760px; }
+.get { margin:0 0 28px; } .get img { height:48px; width:auto; }
+h2 { font-size:15px; letter-spacing:.12em; color:var(--gold); margin:32px 0 10px; }
+video { width:100%; border-radius:12px; border:1px solid var(--line); background:#000; aspect-ratio:1920/886; }
+.strip { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:8px; margin-top:16px; }
+.strip img { flex:none; width:min(640px, 86vw); height:auto; aspect-ratio:2622/1206; border-radius:10px; border:1px solid var(--line); scroll-snap-align:start; background:#000; }
+.intro p { font-size:17px; margin:8px 0; max-width:780px; }
+.secs { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:12px; margin:16px 0; }
+.secs div { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--red); border-radius:10px; padding:14px 16px; }
+.secs b { display:block; color:var(--gold); font-size:13px; letter-spacing:.08em; margin-bottom:4px; }
+.secs p { margin:0; }
+.feat { columns:2 300px; padding:0 0 0 18px; margin:8px 0; } .feat li { margin:2px 0; break-inside:avoid; }
+.end p { margin:10px 0; }
+footer { margin-top:40px; padding-top:16px; border-top:1px solid var(--line); color:var(--soft); font-size:14px; display:flex; flex-wrap:wrap; gap:6px 18px; }
+footer a { color:inherit; }
+@media (max-width:640px) { h1 { font-size:24px; } .icon { width:72px; height:72px; } }
+</style>
+</head>
+<body>
+<main>
+<!-- tools/market_site.py 가 store/<언어>.json 에서 굽는다 — 손으로 고치지 않는다 -->
+<nav><a href="https://dokgi88.github.io/box1r/">English</a> <a href="https://dokgi88.github.io/box1r/ko/">한국어</a> <a href="https://dokgi88.github.io/box1r/ja/">日本語</a> <a href="https://dokgi88.github.io/box1r/zh-hans/">简体中文</a> <a href="https://dokgi88.github.io/box1r/zh-hant/">繁體中文</a> <a href="https://dokgi88.github.io/box1r/es/" aria-current="page">Español</a> <a href="https://dokgi88.github.io/box1r/pt-br/">Português</a> <a href="https://dokgi88.github.io/box1r/fr/">Français</a> <a href="https://dokgi88.github.io/box1r/de/">Deutsch</a> <a href="https://dokgi88.github.io/box1r/ru/">Русский</a></nav>
+<div class="hero"><img class="px" src="../img/header.png" alt="BOX1R" width="1920" height="823"></div>
+<div class="head"><img class="icon" src="../img/icon.png" alt="" width="256" height="256"><div><h1>BOX1R</h1><p class="sub">RING TO BELT</p></div></div>
+<p class="promo">Cinco estilos, un ranking mundial vivo y tres cinturones. Esquiva el jab, mete el contragolpe y quédate con el título. Gratis y se juega sin conexión.</p>
+<div class="get"><a href="https://apps.apple.com/app/id6829400965"><img src="../img/badges/as_es.svg" alt="Download on the App Store"></a></div>
+<h2>Tráiler</h2><video src="../video/preview.mp4" poster="../img/en/01_fight.png" controls playsinline preload="none"></video>
+<div class="strip"><img class="px" src="../img/es/01_fight.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/05_career.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/02_versus.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/03_bag.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/06_locker.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/04_tournament.png" alt="" loading="lazy" width="1311" height="603">
+<img class="px" src="../img/es/07_title.png" alt="" loading="lazy" width="1311" height="603"></div>
+<div class="intro"><p>Ponte los guantes y cruza las cuerdas.</p><p>BOX1R es boxeo uno contra uno en pixel art fluido y con muchos fotogramas. Una cámara isométrica amplia muestra todo el ring, y los boxeadores, pequeños pero con proporciones reales, giran en 16 direcciones.</p></div>
+<div class="secs"><div><b>EL JUEGO DE PIERNAS GANA PELEAS</b><p>Todo el ring es tuyo. Entra, sal, rodea, pivota alrededor del rival y desliza el stick para un paso rápido. Nadie gira en seco: rodea a un rival cerrado en guardia y tus golpes entrarán por el costado.</p></div><div><b>MOVIMIENTO DE CINTURA, NO SOLO GUARDIA ALTA</b><p>Bloquea, o sube las manos justo antes del impacto para desviar. Esquiva de lado, echa el cuerpo atrás, agáchate y sal de la esquina con un vaivén. Haz fallar un golpe y el contragolpe es tuyo. Finta para congelar al rival o amárralo en un clinch para recuperar el aire.</p></div><div><b>TODOS LOS GOLPES</b><p>Jab, directo, gancho y uppercut, a la cabeza o al cuerpo. Añade una dirección para un jab en avance, un volado o un gancho de control. Los ganchos se encadenan izquierda y derecha. Los golpes al cuerpo drenan la resistencia el resto de la pelea.</p></div><div><b>CINCO ESTILOS, CINCO REMATES</b><p>Estilista, fajador, pegador, contragolpeador o boxeador-pegador. Cada estilo se mueve, golpea y pisa distinto, con su golpe característico y su especial, cargado por el rugido del público.</p></div><div><b>GOLPES QUE SE SIENTEN</b><p>Pausa al impacto, temblor de pantalla, sudor y saliva, sonidos de guante en capas y vibración. Las caídas dependen del golpe: un gancho hace girar al rival hasta la lona, un golpe fuerte lo manda volando y en la esquina las cuerdas frenan la caída. Un contragolpe limpio apaga las luces de un solo golpe, con repetición en cámara lenta.</p></div><div><b>UNA PELEA DE VERDAD</b><p>Dos tipos de resistencia, hinchazón y cortes que pueden acabar en detención médica, cuenta de diez, TKO por tres caídas y tres jueces que no siempre coinciden. Entre asaltos, elige el trabajo de tu esquina. Los comentarios en vivo y las estadísticas de golpes muestran por qué ganaste o perdiste.</p></div><div><b>CARRERA: ESCALA UN RANKING VIVO</b><p>Desafía a los boxeadores justo por encima de ti. Gana y quédate con su puesto; pierde y bajas. El resto del mundo también pelea: los rivales entrenan, envejecen y se retiran, debutan promesas y los cinturones cambian de dueño. Gana los títulos de la ciudad, nacional y mundial, defiéndelos y retírate al Salón de la Fama si tu récord lo merece. Las peleas y los campamentos dan experiencia; cada subida de nivel da puntos de entrenamiento que repartes tú. Sin reinicios de tipo roguelike.</p></div><div><b>CAMPAMENTO DE ENTRENAMIENTO</b><p>Ocho ejercicios entre peleas: manoplas con un entrenador que canta combinaciones, saco pesado, sparring contra un compañero que pelea como tu próximo rival, carrera en cinta, manoplas defensivas, pera loca, cuerda de esquivas y saltar la cuerda.</p></div><div><b>CREA A TU BOXEADOR</b><p>Ajusta altura, peso y músculo. Elige entre 17 peinados y barbas, cualquier color para calzón, guantes y botas, diseños y tatuajes (incluidos tatuajes completos japoneses y samoanos) ganados en el ring, guardia ortodoxa o zurda y botas que cambian cómo te mueves.</p></div><div><b>GRATIS</b><p>Los anuncios son videos con recompensa opcionales en el campamento, nunca obligatorios. Quita los anuncios una vez y recibe todas las recompensas sin verlos. Se juega sin conexión.</p></div></div>
+<ul class="feat"><li>Movimiento libre, ángulos y pivotes en un ring isométrico</li><li>Guardia, desvío, esquiva, balanceo, agachada, vaivén, finta y clinch</li><li>Cinco estilos con golpes y especiales propios</li><li>Ranking mundial vivo, tres cinturones y Salón de la Fama</li><li>Torneo de 16 boxeadores y 12 desafíos</li><li>Ocho ejercicios y campamento antes de cada pelea</li><li>Combate Wi-Fi con un amigo en la misma red</li><li>Cinco dificultades, de Principiante a Leyenda</li><li>Repeticiones y modo foto</li><li>Tres esquemas táctiles y compatibilidad con mandos</li><li>Los efectos de sangre se pueden desactivar</li><li>Disponible en 10 idiomas</li></ul>
+<div class="end"><p>Manos arriba. Barbilla abajo. Ding, ding.</p></div>
+<div class="get"><a href="https://apps.apple.com/app/id6829400965"><img src="../img/badges/as_es.svg" alt="Download on the App Store"></a></div>
+<footer><a href="https://dokgi88.github.io/box1r-privacy/#es">Política de privacidad</a><a href="https://dokgi88.github.io/box1r-privacy/support.html#es">Soporte</a><a href="mailto:yeoreum.void@gmail.com">yeoreum.void@gmail.com</a><span>© 2026 dokgi88</span></footer>
+</main>
+</body>
+</html>
